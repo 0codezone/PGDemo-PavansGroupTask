@@ -16,11 +16,11 @@
         <div class="container flex justify-between items-center px-10">
             <h2 class="text-3xl font-bold text-white">PG DEMO</h2>
             <div class="md:flex hidden gap-10 text-lg items-center">
-                <a href="#" class="text-white hover:text-gray-300">Home</a>
-                <a href="#" class="text-white hover:text-gray-300">Services</a>
-                <a href="#" class="text-white hover:text-gray-300">About</a>
-                <a href="#" class="text-white hover:text-gray-300">Testimonials</a>
-                <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
+                <a href="#main" class="text-white hover:text-gray-300">Home</a>
+                <a href="#services" class="text-white hover:text-gray-300">Services</a>
+                <a href="#about" class="text-white hover:text-gray-300">About</a>
+                <a href="#testimonial" class="text-white hover:text-gray-300">Testimonials</a>
+                <a href="#footer" class="text-white hover:text-gray-300">Contact Us</a>
             </div>
             <button class="md:hidden flex text-white font-bold hover:text-gray-300">
                 Menu
@@ -29,7 +29,7 @@
     </nav>
 
     <!-- Main section -->
-    <div class="banner min-h-screen flex items-center  ">
+    <div class="banner min-h-screen flex items-center  " id="main">
         <div class="px-10">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                 We help you to complete your <br>
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Services -->
-    <div class="services py-10 px-10">
+    <div class="services py-10 px-10" id="services">
         <div class="container">
             <h2 class="text-3xl text-center mb-10 font-bold">Services</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
@@ -75,7 +75,7 @@
     </div>
 
     <!-- About -->
-    <div class="w-full py-10 px-10 flex flex-col md:flex-row items-center justify-center bg-blue-100">
+    <div class="w-full py-10 px-10 flex flex-col md:flex-row items-center justify-center bg-blue-100" id="about">
         <!-- Left Part -->
         <div class="md:w-[500px] text-center md:text-left mb-6 md:mb-0">
             <h2 class="text-3xl font-bold mb-4">About Us</h2>
@@ -89,13 +89,115 @@
                 eos minima modi delectus illum beatae repellat? Corporis repellat ullam non, magnam, ad ipsum excepturi
                 impedit iste, velit officia autem?
             </p>
-            <button class="bg-green-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">Send Request</button>
+            <button class="bg-[#226880] text-white font-bold py-2 px-4 rounded">Send Request</button>
         </div>
         <!-- Right Part -->
         <div class="md:w-1/2 flex justify-center">
             <img src="./Assets/Image.png" alt="About Image" class="w-full md:max-w-lg rounded-lg shadow-lg">
         </div>
     </div>
+
+    <!-- testimonials -->
+    <div class="testimonials w-full py-10 px-10" id="testimonial">
+
+        <h2 class="text-3xl text-center mb-10 font-bold">Testimonials</h2>
+        <div class="w-full flex gap-5 px-6">
+            <button
+                class="prev-btn text-xl text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 flex items-center justify-center">&lt;</button>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                <div
+                    class="testimonial bg-white p-4 rounded-md shadow-md flex flex-col justify-center border-4 border-blue-200 shadow-lg">
+                    <h1 class="text-4xl font-bold">"</h1>
+                    <p class="text-sm text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusantium officia inventore eum tempore similique fugiat magni.</p>
+                    <div class="flex items-center mt-4">
+                        <img src="./Assets/1.png" alt="John Doe's photo" class="w-12 h-12 object-cover rounded-full"
+                            loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold">John Doe</h3>
+                            <p class="text-sm text-gray-600">lorem</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial bg-white p-4 rounded-md shadow-md hidden md:flex flex-col justify-center border-4 border-blue-200 shadow-lg">
+                    <h1 class="text-4xl font-bold">"</h1>
+                    <p class="text-sm text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusantium officia inventore eum tempore similique fugiat magni.</p>
+                    <div class="flex items-center mt-4">
+                        <img src="./Assets/2.png" alt="John Doe's photo" class="w-12 h-12 object-cover rounded-full"
+                            loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold">Robert Fox</h3>
+                            <p class="text-sm text-gray-600">lorem</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial  bg-white p-4 rounded-md shadow-md hidden lg:flex flex-col justify-center border-4 border-blue-200 shadow-lg">
+                    <h1 class="text-4xl font-bold">"</h1>
+                    <p class="text-sm text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusantium officia inventore eum tempore similique fugiat magni.</p>
+                    <div class="flex items-center mt-4">
+                        <img src="./Assets/3.png" alt="John Doe's photo" class="w-12 h-12 object-cover rounded-full"
+                            loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold">Cody Fisher</h3>
+                            <p class="text-sm text-gray-600">lorem</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other testimonials -->
+            </div>
+            <button
+                class="prev-btn text-xl text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 flex items-center justify-center">&gt;</button>
+
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#226880] text-white py-10 px-10 w-full flex items-center justify-center" id="footer">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
+            <!-- Site Logo and Info -->
+            <div class="footer-section">
+                <h3 class="text-2xl font-bold mb-2">PG Demo</h3>
+                <p class="max-w-[300px] text-sm  my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos
+                    maxime
+                    facilis quasi veritatis! Qui ipsum excepturi fugiat. Repellendus, praesentium quo?</p>
+                <p class="text-sm">123 Main Street, City, Country</p>
+                <p class="text-sm">info@example.com</p>
+                <p class="text-sm">Phone: +1234567890</p>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="footer-section">
+                <h3 class="text-lg font-bold mb-2">Useful Links</h3>
+                <ul>
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-section">
+                <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+                <div class="flex gap-4">
+                    <a href="#" class="text-white hover:text-gray-300"><img src="./Assets/youtube.png" alt=""></a>
+                    <a href="#" class="text-white hover:text-gray-300"><img src="./Assets/Facebook.png" alt=""></a>
+                    <a href="#" class="text-white hover:text-gray-300"><img src="./Assets/Instagram.png " alt=""></a>
+                    <a href="#" class="text-white hover:text-gray-300"><img src="./Assets/Linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 
 
 
