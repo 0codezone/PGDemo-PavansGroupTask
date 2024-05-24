@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-image: url("./Assets/Banner.png");
+    background-size: cover;
+    background-position: center;
+}
